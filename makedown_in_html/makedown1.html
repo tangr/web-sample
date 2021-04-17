@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test1</title>
+
+	<style type="text/css">
+/* Scroll down! */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+body {
+  margin: 1em;
+}
+
+#out {
+  background: #eee;
+  display: inline-block;
+}
+#out::before {
+  content: '\a';
+  white-space: pre;
+}
+
+#out > *:first-child {
+  margin-top: 0;
+}
+	</style>
+</head>
+<body>
+<script src="https://cdn.rawgit.com/aFarkas/html5shiv/5a8a9a9adccb27e1a79aa0bc739c1ab6f5259a57/dist/html5shiv-printshiv.min.js"></script>
+<script src="https://cdn.rawgit.com/snuggles08/codepen-assets/8eac3d040540748c57e72a2d7d51e1ff1f500a4c/markdown-inline/markdown.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<template class="markdown" id="in">
+  # An exhibit of Markdown
+
+https://stackoverflow.com/questions/28967068/html-with-embedded-markdown-document
+
+  This note demonstrates some of what [Markdown][1] is capable of doing.
+
+  *Note: Feel free to play with this page. Unlike regular notes, this doesn't automatically save itself.*
+
+  ## Basic formatting
+
+  Paragraphs can be written like so. A paragraph is the basic block of Markdown. A paragraph is what text will turn into when there is no reason it should become anything else.
+
+  Paragraphs must be separated by a blank line. Basic formatting of *italics* and **bold** is supported. This *can be **nested** like* so.
+
+  ## Lists
+
+  ### Ordered list
+
+  1. Item 1
+  2. A second item
+  3. Number 3
+  4. Ⅳ
+
+  *Note: the fourth item uses the Unicode character for [Roman numeral four][2].*
+
+  ### Unordered list
+
+  * An item
+  * Another item
+  * Yet another item
+  * And there's more...
+
+  ## Paragraph modifiers
+
+  ### Code block
+
+      Code blocks are very useful for developers and other people who look at code or other things that are written in plain text. As you can see, it uses a fixed-width font.
+
+  You can also make `inline code` to add code into other things.
+
+  ### Quote
+
+  > Here is a quote. What this is should be self explanatory. Quotes are automatically indented when they are used.
+
+  ## Headings
+
+  There are six levels of headings. They correspond with the six levels of HTML headings. You've probably noticed them already in the page. Each level down uses one more hash character.
+
+  ### Headings *can* also contain **formatting**
+
+  ### They can even contain `inline code`
+
+  Of course, demonstrating what headings look like messes up the structure of the page.
+
+  I don't recommend using more than three or four levels of headings here, because, when you're smallest heading isn't too small, and you're largest heading isn't too big, and you want each size up to look noticeably larger and more important, there there are only so many sizes that you can use.
+
+  ## URLs
+
+  URLs can be made in a handful of ways:
+
+  * A named link to [MarkItDown][3]. The easiest way to do these is to select what you want to make a link and hit `Ctrl+L`.
+  * Another named link to [MarkItDown](http://www.markitdown.net/)
+  * Sometimes you just want a URL like <http://www.markitdown.net/>.
+
+  ## Horizontal rule
+
+  A horizontal rule is a line that goes across the middle of the page.
+
+  ---
+
+  It's sometimes handy for breaking things up.
+
+  ## Images
+
+  Markdown can also contain images. I'll need to add something here sometime.
+
+  ## Finally
+
+  There's actually a lot more to Markdown than this. See the official [introduction][4] and [syntax][5] for more information. However, be aware that this is not using the official implementation, and this might work subtly differently in some of the little things.
+
+
+    [1]: http://daringfireball.net/projects/markdown/
+    [2]: http://www.fileformat.info/info/unicode/char/2163/index.htm
+    [3]: http://www.markitdown.net/
+    [4]: http://daringfireball.net/projects/markdown/basics
+    [5]: http://daringfireball.net/projects/markdown/syntax
+</template>
+Text by MarkItDown:
+<span id="out"></span>
+  <script type="text/javascript">
+var mdParser = markdown;
+var mdP = mdParser;
+var mdTemplate = $('template.markdown#in');
+var mdT = mdTemplate;
+var md = mdT.html().replace(/^  /gm, '').replace(/\n.*(?!.*\n)/g, '');
+var mdOutput = $('#out');
+var mdO = mdOutput;
+var mdHTML = mdP.toHTML(md);
+
+mdO.html(mdHTML);
+  </script>
+</body>
+</html>
+
